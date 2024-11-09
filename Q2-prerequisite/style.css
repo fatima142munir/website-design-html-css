@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/developer.avif");
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.box {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.54;
+    position: absolute;
+
+}
+
+.navBarButtonContainer{
+    display: flex;
+}
+.navBarButtonContainer a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+.navBarButtonContainer button{
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    font-size: large;
+}
+
+.logo {
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    position: relative;
+    /* z-index: 10; */
+
+}
+
+nav {
+    box-sizing: border-box;
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 34px;
+    justify-content: space-between;
+    height: 50px;
+
+}
+
+.center {
+    color: white;
+    padding-top: 20%;
+    display: flex;
+    font-size: 30px;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* > arrow is use for only immediate first child */
+.center> :first-child {
+    font-weight: 900;
+    text-align: center;
+}
+
+.center :nth-child(2) {
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.center :nth-child(3) {
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+.btn-input {
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: large;
+    padding: 4px 30px;
+}
+
+.btn-getStarted {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-size: large;
+    padding: 4px 30px;
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    max-width: 70vw;
+}
+
+.separation {
+    margin-bottom: 20px;
+    height: 4px;
+    background-color: rgb(87, 85, 85);
+}
+
+.secImage {
+    position: relative;
+
+}
+
+.secImage img {
+    position: relative;
+    width: 410px;
+    top: 0;
+
+}
+
+.secImage video {
+    position: absolute;
+    width: 288px;
+    top: 20px;
+    right: 60px;
+}
+
+.faq {
+    color: white;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.faqBox {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(62, 61, 61);
+    padding: 22px;
+    max-width: 50vw;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.faq :hover {
+    background-color: rgb(53, 49, 49);
+    transition: all 0.5s ease-out;
+    border-radius: 40px;
+}
+
+.footerclass {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+    padding: 34px;
+}
+
+.footerFaq {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footerFaq a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: black
+    }
+
+    
+    .first {
+        flex-wrap: wrap;
+    }
+    .footerclass{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 34px;
+
+    }
+    .center div{
+        padding: 0px 0px 0px 80px;
+    }
+
+    .navBarButtonContainer button{
+        padding: 10px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: small;
+    }
+    
+
+}
+@media screen and (min-width: 1500px){
+    .center{
+        padding-top: 10%;
+    }
+}
+
+
+/* nav .logo{
+    position: relative;
+    z-index: 10;
+} */
